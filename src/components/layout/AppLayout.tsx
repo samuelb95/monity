@@ -19,18 +19,16 @@ export function AppLayout({ children, currentPath, routes }: AppLayoutProps) {
       <Sidebar
         currentPath={currentPath}
         isOpen={isSidebarOpen}
+        onToggle={() => setIsSidebarOpen((isOpen) => !isOpen)}
         routes={routes}
       />
       <div
         className={[
           'min-h-screen pb-24 transition-[margin] duration-200 ease-out lg:pb-0',
-          isSidebarOpen ? 'lg:ml-64' : 'lg:ml-0',
+          isSidebarOpen ? 'lg:ml-64' : 'lg:ml-20',
         ].join(' ')}
       >
-        <TopBar
-          isSidebarOpen={isSidebarOpen}
-          onToggleSidebar={() => setIsSidebarOpen((isOpen) => !isOpen)}
-        />
+        <TopBar />
         <main className="mx-auto w-full max-w-6xl px-4 py-5 sm:px-6 lg:px-8 lg:py-7">
           {children}
         </main>
