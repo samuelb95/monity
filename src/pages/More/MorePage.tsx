@@ -22,11 +22,6 @@ const menuItems = [
     title: 'Prêts',
   },
   {
-    description: 'Alertes importantes et rappels financiers.',
-    href: '#/notifications',
-    title: 'Notifications',
-  },
-  {
     description: 'Préférences et configuration de Monity.',
     href: '#/settings',
     title: 'Paramètres',

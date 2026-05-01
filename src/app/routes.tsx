@@ -7,7 +7,6 @@ import { GroupsPage } from '../pages/Groups/GroupsPage'
 import { InvestmentsPage } from '../pages/Investments/InvestmentsPage'
 import { LoansPage } from '../pages/Loans/LoansPage'
 import { MorePage } from '../pages/More/MorePage'
-import { NotificationsPage } from '../pages/Notifications/NotificationsPage'
 import { SettingsPage } from '../pages/Settings/SettingsPage'
 import { TransactionsPage } from '../pages/Transactions/TransactionsPage'
 
@@ -26,7 +25,6 @@ export const secondaryRoutePaths = [
   '/forecasts',
   '/goals',
   '/loans',
-  '/notifications',
   '/settings',
 ]
 
@@ -94,13 +92,6 @@ export const routes: AppRoute[] = [
     shortLabel: 'Prêts',
     showInSidebar: false,
     Component: LoansPage,
-  },
-  {
-    path: '/notifications',
-    label: 'Notifications',
-    shortLabel: 'Notif.',
-    showInSidebar: false,
-    Component: NotificationsPage,
   },
   {
     path: '/settings',
